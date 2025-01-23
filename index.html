@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="CuriousBot: Interactive Mobile Exploration via Actionable 3D Relational Object Graph">
+    content="CuriousBot: Interactive Mobile Exploration via Actionable 3D Relational Object Graph">
   <meta name="keywords" content="Robotic Manipulation, Language Models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CuriousBot</title>
   <link rel="icon" type="image/png" href="media/figures/icon.png">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-FV4ZJ9PVSV');
@@ -28,24 +29,22 @@
       console.log("updateQualitative", task)
 
       var video = document.getElementById("qualitative-video");
-      video.src = "media/videos/quali_" + 
-                  task + 
-                  ".mp4";
+      video.src = "media/videos/quali_" +
+        task +
+        ".mp4";
       video.play();
     }
 
 
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,66 +53,74 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body onload="updateQualitative();">
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-fullhd">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CuriousBot: Interactive Mobile Exploration<br>via Actionable 3D Relational Object Graph</h1>
-          <!-- <h3 class="title is-4 conference-authors">
-            CoRL 2024 <font color = "#C21E56"><strong>(Oral)</strong></font>
-          </h3> -->
-          <!-- <h3 class="title is-4 conference-authors"><a target="_blank" href="https://www.corl2023.org/">CoRL 2023 (Oral)</a></h3> -->
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a target="_blank" href="https://wangyixuan12.github.io/">Yixuan Wang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank" href="https://www.linkedin.com/in/leonor-fermoselle/">Leonor Fermoselle</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank" href="https://kelestemur.com/">Tarik Kelestemur</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank" href="https://www.robo.guru/">Jiuguang Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank" href="https://yunzhuli.github.io/">Yunzhu Li</a><sup>1</sup>
-            </span>
-          </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Columbia University,</span>
-            <span class="author-block"><sup>2</sup>Boston Dynamics AI Institute</span>
-          </div>
 
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a target="_blank" href="media/text/main.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a target="_blank" href="media/text/supp.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Appendix</span>
-                </a>
-              </span>
+            <h1 class="title is-1 publication-title">CuriousBot: Interactive Mobile Exploration<br>via Actionable 3D
+              Relational Object Graph</h1>
+            <div class="is-size-4 publication-authors">
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a target="_blank" href="https://wangyixuan12.github.io/">Yixuan Wang</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a target="_blank" href="https://www.linkedin.com/in/leonor-fermoselle/">Leonor
+                    Fermoselle</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a target="_blank" href="https://kelestemur.com/">Tarik Kelestemur</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a target="_blank" href="https://www.robo.guru/">Jiuguang Wang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a target="_blank" href="https://yunzhuli.github.io/">Yunzhu Li</a><sup>1</sup>
+                </span>
+                <br><br>
+                <img src="media/figures/columbia_crop.png" width="25%" style="margin-right: 100px;"></img> <img
+                  src="media/figures/bdai.png" width="15%"></img>
+                <br><br>
+              </div>
+            </div>
 
-            <!-- Arxiv Link. -->
-            <!-- <span class="link-block">
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Columbia University &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+              <span class="author-block"><sup>2</sup>Boston Dynamics AI Institute</span>
+            </div> -->
+            <!-- <br><br> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a target="_blank" href="media/text/main.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a target="_blank" href="media/text/supp.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Appendix</span>
+                  </a>
+                </span>
+
+                <!-- Arxiv Link. -->
+                <!-- <span class="link-block">
               <a target="_blank" href="https://arxiv.org/abs/2309.16118"
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -123,19 +130,19 @@
               </a>
             </span> -->
 
-            <!-- Video Link. -->
-            <span class="link-block">
-              <a target="_blank" href="https://youtu.be/1fK9-OrSwpQ"
-                 class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-youtube"></i>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a target="_blank" href="https://youtu.be/1fK9-OrSwpQ"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
                 </span>
-                <span>Video</span>
-              </a>
-            </span>
 
-            <!-- Code Link. -->
-            <!-- <span class="link-block">
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
               <a target="_blank" href="https://github.com/WangYixuan12/d3fields"
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -144,15 +151,15 @@
                 <span>Code</span>
                 </a>
             </span> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
+  <!-- <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
       <div class="container">
@@ -165,164 +172,281 @@
         </div>
         <br>
         <h2 class="subtitle has-text-centered">
-          CuriousBot is a mobile robot that can interactively explore the environment, build a 3D relational object graph,<br>and exploit the built graph for robotic manipulation tasks on diverse scenes.
+          <strong>TL;DR: CuriousBot is a mobile robot that can interactively explore the environment, build a 3D relational object graph,<br>and exploit the built graph for robotic manipulation tasks on diverse scenes.</strong>
         </h2>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
+  <section class="section" style="padding-bottom: 0">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <video poster="" autoplay muted loop height="100%">
-            <source src="media/videos/cabinet_x16_web_small_comp.mp4"
-                    type="video/mp4">
-          </video>
+      <div id="method_video" class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds no-bottom-padding">
+          <center>
+            <video playsinline autoplay loop muted controls src="media/videos/teaser_2.mp4" width="100%"
+              preload="metadata" style="border-radius:10px;"></video>
+          </center>
         </div>
-        <div class="item">
-          <video poster="" autoplay muted loop height="100%">
-            <source src="media/videos/chair_x16_web_small_comp.mp4"
-                    type="video/mp4">
-          </video>
+      </div>
+      <h4 class="title is-5" style="text-align: center;">
+        <strong>TL;DR: CuriousBot is a mobile robot that can interactively explore the environment, build a 3D
+          relational object graph,<br>and exploit the built graph for robotic manipulation tasks on diverse
+          scenes.</strong>
+      </h4>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <!-- Abstract. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Mobile exploration is a longstanding challenge in robotics, yet current methods primarily focus on active
+              perception instead of active interaction, limiting the robot's ability to interact with and fully explore
+              its environment. Existing robotic exploration approaches via active interaction are often restricted to
+              tabletop scenes, neglecting the unique challenges posed by mobile exploration, such as large exploration
+              spaces, complex action spaces, and diverse object relations. In this work, we introduce a 3D relational
+              object graph that encodes diverse object relations and enables exploration through active interaction. We
+              develop a system based on this representation and evaluate it across diverse scenes. Our qualitative and
+              quantitative results demonstrate the system's effectiveness and generalization capabilities, outperforming
+              methods that rely solely on vision-language models (VLMs).
+            </p>
+          </div>
         </div>
-        <div class="item">
-          <video poster="" autoplay muted loop height="100%">
-            <source src="media/videos/check_bottom_x16_web_small.mp4"
-                    type="video/mp4">
-          </video>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+
+    <div class="container is-max-widescreen">
+      <div class="rows">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Interactive Mobile Exploration</h2>
         </div>
-        <div class="item">
-          <video poster="" autoplay muted loop height="100%">
-            <source src="media/videos/cloth_x16_web_small_comp.mp4"
-                    type="video/mp4">
-          </video>
+        <br>
+        <div class="columns is-centered has-text-centered">
+            Select a task to see the third-person view video and the corresponding 3D relational object graph
+            visualization.
         </div>
-        <div class="item">
-           <video poster="" autoplay muted loop height="100%">
-             <source src="media/videos/flip_box_x16_web_small_comp.mp4"
-                     type="video/mp4">
-           </video>
-         </div>
-         <div class="item">
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="columns">
+            <div class="column has-text-centered">
+              <div class="select is-rounded">
+                <select id="qualitative-video-menu" onchange="updateQualitative()">
+                  <option value="house" selected="selected">Explore House</option>
+                  <option value="flip_box">Flip Boxes</option>
+                  <option value="check_bottom">Sit Down</option>
+                  <option value="cabinet">Open Cabinet</option>
+                  <option value="chair">Push Chair</option>
+                  <option value="cloth">Lift Cloth</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_house.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div>
+
+        <!-- <br><br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-5">Push Chair Away to Reveal Space Behind It</h2>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_chair.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-5">Flip Open Boxes to See What is Inside</h2>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_flip_box.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-5">Sit Down to Check the Space Under the Table</h2>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_check_bottom.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-5">Lift the Cloth to Find Out the Bottle Under It</h2>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_cloth.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-5">Open Cabinet and Check the Space Inside It</h2>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <p style="text-align:center;">
+              <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
+                <source src="media/videos/quali_cabinet.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
             <video poster="" autoplay muted loop height="100%">
-              <source src="media/videos/house_x16_web_small_comp.mp4"
-                      type="video/mp4">
+              <source src="media/videos/cabinet_x16_web_small_comp.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item">
             <video poster="" autoplay muted loop height="100%">
-              <source src="media/videos/teaser_x16_web_small_comp.mp4"
-                      type="video/mp4">
+              <source src="media/videos/chair_x16_web_small_comp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay muted loop height="100%">
+              <source src="media/videos/check_bottom_x16_web_small.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay muted loop height="100%">
+              <source src="media/videos/cloth_x16_web_small_comp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay muted loop height="100%">
+              <source src="media/videos/flip_box_x16_web_small_comp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay muted loop height="100%">
+              <source src="media/videos/house_x16_web_small_comp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay muted loop height="100%">
+              <source src="media/videos/teaser_x16_web_small_comp.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<h2 class="subtitle has-text-centered">
-</br>
-  CuriousBot can understand various object relations and explore diverse scenes interactively using a handful manipulation skills.
-</h2>
+    </div>
+  </section>
+  <h2 class="subtitle has-text-centered">
+    </br>
+    CuriousBot can understand various object relations and explore diverse scenes interactively using a handful
+    manipulation skills.
+  </h2>
 
 
-<section class="section">
-  <!-- Abstract. -->
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Mobile exploration is a longstanding challenge in robotics, yet current methods primarily focus on active perception instead of active interaction, limiting the robot's ability to interact with and fully explore its environment. Existing robotic exploration approaches via active interaction are often restricted to tabletop scenes, neglecting the unique challenges posed by mobile exploration, such as large exploration spaces, complex action spaces, and diverse object relations. In this work, we introduce a 3D relational object graph that encodes diverse object relations and enables exploration through active interaction. We develop a system based on this representation and evaluate it across diverse scenes. Our qualitative and quantitative results demonstrate the system's effectiveness and generalization capabilities, outperforming methods that rely solely on vision-language models (VLMs).
-          </p>
+  <section class="section">
+
+    <!-- Paper video. -->
+    <br>
+    <br>
+
+    <div class="container is-max-widescreen">
+
+      <div class="rows">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/1fK9-OrSwpQ" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Paper video. -->
-  <br>
-  <br>
+  </section>
 
-  <div class="container is-max-widescreen">
+  <section class="section">
+    <div class="container is-max-widescreen">
 
-    <div class="rows">
-      <h2 class="title is-3">Video</h2>
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/1fK9-OrSwpQ"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="section">
-  <div class="container is-max-widescreen">
-
-    <div class="rows">
+      <div class="rows">
 
 
-    <div class="rows is-centered ">
-      <div class="row is-full-width">
-        <h2 class="title is-3">CuriousBot</h2>
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            <h2 class="title is-3">CuriousBot</h2>
 
-        <div class="content has-text-justified">
-        </div>
-        <img src="media/figures/method.png" class="interpolation-image" />
-        </br>
-        </br>
-          <p class="content has-text-justified">
-            <b>Method Overview.</b>
-            (a) In the perception pipeline, SLAM processes RGBD observations and odometry estimation from the robot to output camera poses, which are used alongside the RGBD observations to construct an actionable 3D relational object graph.
-            (b) The 3D relational object graph comprises object nodes containing both geometric and semantic information, as well as object edges that encode complex object relations.
-            (c) The serialized object graph is fed into the task planner, and the generated task plans are executed using low-level skills to interactively explore the environment.
-          </p>
-        
-      <br>
-      <br>
-    </div>
-  </div>
+            <div class="content has-text-justified">
+            </div>
+            <img src="media/figures/method.png" class="interpolation-image" />
+            </br>
+            </br>
+            <p class="content has-text-justified">
+              <b>Method Overview.</b>
+              (a) In the perception pipeline, SLAM processes RGBD observations and odometry estimation from the robot to
+              output camera poses, which are used alongside the RGBD observations to construct an actionable 3D
+              relational object graph.
+              (b) The 3D relational object graph comprises object nodes containing both geometric and semantic
+              information, as well as object edges that encode complex object relations.
+              (c) The serialized object graph is fed into the task planner, and the generated task plans are executed
+              using low-level skills to interactively explore the environment.
+            </p>
 
-  <div class="rows">
-    <h2 class="title is-3">Qualitative Videos</h2>
-    <p class="content has-text-justified">
-      Select a task to see the third-person view video and the corresponding 3D relational object graph visualization.
-    </p>
-      <div class="columns">
-        <div class="column has-text-centered">
-          <div class="select is-rounded">     
-            <select id="qualitative-video-menu" onchange="updateQualitative()">
-            <option value="house" selected="selected">Explore House</option>
-            <option value="flip_box">Flip Boxes</option>
-            <option value="check_bottom">Sit Down</option>
-            <option value="cabinet">Open Cabinet</option>
-            <option value="chair">Push Chair</option>
-            <option value="cloth">Lift Cloth</option>
-            </select>
+            <br>
+            <br>
           </div>
         </div>
-      </div>
 
-      <div class="columns">
-        <div class="column has-text-centered">
-          <p style="text-align:center;">
-            <video id="qualitative-video" width="100%" height="100%" controls autoplay loop muted>
-              <source src="media/videos/quali_house.mp4" type="video/mp4">
-            </video>
-          </p>
-        </div>
-      </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
   <div class="container is-max-widescreen content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{wang2024d3fields,
@@ -335,20 +459,22 @@
 </section> -->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content has-text-centered">
-          <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://peract.github.io/">PerAct</a>, and <a href="https://voxposer.github.io/">VoxPoser</a>. 
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <p>
+              Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a
+                href="https://peract.github.io/">PerAct</a>, and <a href="https://voxposer.github.io/">VoxPoser</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 </body>
+
 </html>
